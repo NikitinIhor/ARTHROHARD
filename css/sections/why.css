@@ -1,0 +1,81 @@
+.what {
+}
+.container-big {
+}
+.container {
+}
+.what-container {
+}
+.what-title {
+  padding-top: 70px;
+  font-weight: 450;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 90px;
+  background: linear-gradient(90.01deg, #111111 -8.85%, #b1b1b1 116.12%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  position: relative;
+}
+.what-title::before {
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 1px;
+  background-color: rgba(17, 17, 17, 1);
+}
+
+.what-list {
+}
+.what-item {
+}
+.what-item-title {
+  font-weight: 450;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+.what-item-title::before {
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 1px;
+  background-color: rgba(17, 17, 17, 1);
+}
+.what-item-text {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* .item-underlined {
+  position: relative;
+}
+.item-underlined::before {
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 1px;
+  background-color: rgba(17, 17, 17, 1);
+} */
+.what-item-image {
+}
+.what-item-options {
+}
+.what-item-option {
+}
+.what-item-images {
+}
+.half-image {
+}
