@@ -2,7 +2,10 @@
 @import url("./burger.css");
 @import url("./header.css");
 @import url("./sections/arthrohard.css");
+@import url("./sections/what.css");
 @import url("./sections/why.css");
+@import url("./sections/contain.css");
+@import url("./footer.css");
 
 .container {
   max-width: 320px;

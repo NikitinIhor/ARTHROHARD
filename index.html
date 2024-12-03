@@ -18,14 +18,14 @@
         </div>
         <nav>
           <ul class="header-list">
-            <li class="header-item">
+            <li class="header-item isActive ">
               <a href="#">CO nas wyróżnia</a>
             </li>
             <li class="header-item">
-              <a href="#">Skład</a>
+              <a href="#Skład">Skład</a>
             </li>
             <li class="header-item">
-              <a href="#">produkty</a>
+              <a href="#produkty">produkty</a>
             </li>
           </ul>
         </nav>
@@ -37,15 +37,17 @@
             <span class="line"></span>
           </label>
           <nav class="nav-menu">
+            <div class="close"><button type="button">x</button></div>
             <ul>
-              <li><a href="#">działanie preparatu</a></li>
-              <li><a href="#">zalecenia</a></li>
-              <li><a href="#">Skład</a></li>
-              <li><a href="#">Dawkowanie</a></li>
-              <li><a href="#">Opinie</a></li>
+              <li><a href="#działanie">działanie preparatu</a></li>
+              <li><a href="#zalecenia">zalecenia</a></li>
+              <li><a href="#Skład">Skład</a></li>
+              <li><a href="#Dawkowanie">Dawkowanie</a></li>
+              <li><a href="#Opinie">Opinie</a></li>
             </ul>
           </nav>
         </div>
+        <div class="overlay"></div>
       </div>
     </header>
     <main class="main">
@@ -73,67 +75,88 @@
             </div>
           </div>
         </section>
-        <section class="what">
+        <section id="Opinie" class="what">
+          <span class="what-effect-left" aria-hidden="true"></span>
+          <span class="what-effect-right" aria-hidden="true"></span>
           <div class="container-big">
             <div class="container what-container">
               <h2 class="what-title">Co wyróżnia nasz preparat</h2>
               <ul class="what-list">
                 <li class="what-item">
+                  <div class="what-item-content">
+                    <span class="decoration-effect-left" aria-hidden="true"></span>
+                    <span class="decoration-effect-right" aria-hidden="true"></span>
                   <h3 class="what-item-title">Innowacyjny dodatek - 
                     Czarciego Pazura</h3>
                     <p class="what-item-text">Zapewnia dodatkowe wsparcie w zwalczaniu stanów bólowych i zapalnych. Skoncentrowane składniki aktywne, opracowane we współpracy z lekarzami weterynarii, przynoszą szybkie i zauważalne efekty, szczególnie korzystne dla zwierząt
                       z poważnymi problemami stawowymi.</p>
-                      <figure class="what-item-image">
+                    </div>
+                      <figure class="what-item-image image-underlined">
                         <img 
                           src="./images/content/flower.jpg" 
-                          srcset="./images/content/flower.jpg 1x, ./images/content/flower@2x.png 2x" 
+                          srcset="./images/content/flower.jpg 1x, ./images/content/flower@2x.jpg 2x" 
                           alt="image of flowers" 
                           loading="lazy" 
                         />
                       </figure>
                 </li>
-                <li class="what-item">
+                <li id="zalecenia" class="what-item">
+                  <div class="what-item-content">
+                    <span class="decoration-effect-left" aria-hidden="true"></span>
+                    <span class="decoration-effect-right" aria-hidden="true"></span>
                   <h3 class="what-item-title">Wygoda -
                     dwa sposoby podawania</h3>
                     <ul class="what-item-options">
                       <li class="what-item-option">
-                        <span>1</span>
+                        <div class="circle">
+                          <span>1</span>
+                        </div>
+                        
                         <p>Bezpośrednio do pyszczka</p>
                       </li>
                       <li class="what-item-option">
+                        <div class="circle">
                         <span>2</span>
+                      </div>
                         <p>Zmieszany z karmą</p>
                       </li>
                     </ul>
+                    </div>
                       <div class="what-item-images">
                         <figure class="half-image">
                           <img 
                           src="./images/content/Thirdman.jpg" 
-                          srcset="./images/content/Thirdman.jpg 1x, ./images/content/Thirdman@2x.png 2x" 
+                          srcset="./images/content/Thirdman.jpg 1x, ./images/content/Thirdman@2x.jpg 2x" 
                           alt="image of dog" 
                           loading="lazy" 
                         />
                         </figure>
                         <figure class="half-image">
                           <img 
-                          src="./images/content/MART  PRODUCTION.jpg" 
-                          srcset="./images/content/MART  PRODUCTION.jpg 1x, ./images/content/MART  PRODUCTION@2x.png 2x" 
+                          src="./images/content/mart.jpg" 
+                          srcset="./images/content/mart.jpg 1x, ./images/content/mart@2x.jpg 2x" 
                           alt="image of dog" 
                           loading="lazy" 
                         />
                         </figure>
                       </div>
                 </li>
-                <li class="what-item">
+                <li id="Dawkowanie" class="what-item">
+                  <div class="what-item-content">
+                    <span class="decoration-effect-left" aria-hidden="true"></span>
+                    <span class="decoration-effect-right" aria-hidden="true"></span>
                   <h3 class="what-item-title">Skuteczność -
                     skoncentrowana dawka</h3>
-                    <p class="what-item-text"> <span>Tylko jedna porcja dziennie.</span>
+                    <p class="what-item-subtext">Tylko jedna porcja dziennie.</p>
+                    <p class="what-item-text">
+                   
                       To nie tylko wygoda, ale również gwarancja,
                       że Twoje zwierzę otrzymuje wszystko, czego potrzebuje, aby cieszyć się zdrowiem i aktywnością na długo. Skorzystaj z zalet Arthrohard i zobacz różnicę w komforcie życia swojego zwierzęcia..</p>
+                    </div>
                       <figure class="what-item-image">
                         <img 
                           src="./images/content/medical.jpg" 
-                          srcset="./images/content/medical.jpg 1x, ./images/content/medical@2x.png 2x" 
+                          srcset="./images/content/medical.jpg 1x, ./images/content/medical@2x.jpg 2x" 
                           alt="image of medical" 
                           loading="lazy" 
                         />
@@ -143,9 +166,182 @@
             </div>
           </div>
         </section>
+        <section id ="działanie"class="why">
+          <div class="container">
+            <h2 class="what-title why-title">Działanie preparatu</h2>
+            <ul class="what-item-options why-item-options effect">
+              <span class="why-effect-left" aria-hidden="true"></span>
+              <span class="why-effect-right" aria-hidden="true"></span>
+              <li class="what-item-option why-item-option">
+                <div class="circle">
+                  <span>1</span>
+                </div>
+                <p>Wsparcie rozwoju chrząstki stawowej</p>
+              </li>
+              <li class="what-item-option why-item-option">
+                <div class="circle">
+                <span>2</span>
+              </div>
+                <p>Działanie chondroprotekcyjne</p>
+              </li>
+              <li class="what-item-option why-item-option">
+                <div class="circle">
+                <span>3</span>
+              </div>
+                <p>Zmniejszenie stanu zapalnego i bólu</p>
+              </li>
+              <li class="what-item-option why-item-option">
+                <div class="circle">
+                <span>4</span>
+              </div>
+                <p>Wzmocnienie stawów</p>
+              </li>
+              <li class="what-item-option why-item-option">
+                <div class="circle">
+                <span>5</span>
+              </div>
+                <p>Ochrona przed mikrourazami</p>
+              </li>
+              <li class="what-item-option why-item-option">
+                <div class="circle">
+                <span>6</span>
+              </div>
+                <p>Regeneracja po urazach i zabiegach ortopedycznych</p>
+              </li>
+              <li class="what-item-option why-item-option">
+                <div class="circle">
+                <span>7</span>
+              </div>
+                <p>Poprawa jakości życia</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="Skład" class="contain">
+          <div class="container contain-container">
+            <div class="contain-effect">
+              <h2 class="what-title contain-title">Skład w 5 ml</h2>
+              <span class="contain-effect-left" aria-hidden="true"></span>
+                <span class="contain-effect-right" aria-hidden="true"></span>
+            </div>
+            <h3 class="what-item-title contain-item-title ">Co dają poszczególne składniki:</h3>
+            <ul class="contain-list">
+              <li class="contain-item">
+                <svg class="contain-icon" width="40" height="40">
+                  <use href="./images/sprite.svg#icon-mikroscope"></use>
+                </svg>
+                <h2>Siarczan glukozaminy</h2>
+                <p>650 mg</p>
+                <p>Glukozamina jest naturalnym składnikiem chrząstki. Dodatek glukozaminy przyczynia się do zwiększenia produkcji glikozaminoglikanów (m.in. siarczanu keratanu, heparanu, kwasu hialuronowego), które pomagają w odbudowie chrząstki, co jest szczególnie korzystne dla zwierząt ze zmianami zwyrodnieniowymi stawów.</p>
+              </li>
+              <li class="contain-item contain-effect">
+                <svg class="contain-icon " width="40" height="40">
+                  <use href="./images/sprite.svg#icon-pazur"></use>
+                </svg>
+                <span class="contain-effect-left" aria-hidden="true"></span>
+                <span class="contain-effect-right" aria-hidden="true"></span>
+                <h2>Czarci pazur</h2>
+                <p>250 mg</p>
+                <p>Czarci pazur jest rośliną, która ma właściwości przeciwzapalne i przeciwbólowe. Może to pomóc zwierzętom, które doświadczają bólu i stanu zapalnego związanego z problemami ze stawami.</p>
+              </li>
+              <li class="contain-item">
+                <svg class="contain-icon" width="40" height="40">
+                  <use href="./images/sprite.svg#icon-mikroscope"></use>
+                </svg>
+                <h2>Siarczan chondroityny</h2>
+                <p>300 mg</p>
+                <p>Chondroityna, podobnie jak glukozamina, jest składnikiem chrząstki. Chondroityna pomaga zwalczać enzymy, które niszczą chrząstkę, a także pomaga chrząstce zatrzymać wodę, co jest ważne dla jej sprężystości i absorpcji wstrząsów.</p>
+              </li>
+              <li class="contain-item contain-effect">
+                <svg class="contain-icon effect" width="40" height="40">
+                  <use href="./images/sprite.svg#icon-C"></use>
+                </svg>
+                <span class="contain-effect-left" aria-hidden="true"></span>
+                <span class="contain-effect-right" aria-hidden="true"></span>
+                <h2>Witamina C</h2>
+                <p>50 mg</p>
+                <p>Witamina C jest potężnym przeciwutleniaczem, który może pomóc w ochronie stawów poprzez neutralizację wolnych rodników, które mogą uszkadzać chrząstkę. Ponadto, witamina C odgrywa ważną rolę w produkcji kolagenu, kluczowego składnika chrząstki.</p>
+              </li>
+              <li class="contain-item">
+                <svg class="contain-icon" width="40" height="40">
+                  <use href="./images/sprite.svg#icon-kwas"></use>
+                </svg>
+                <h2>Kwas hialuronowy</h2>
+                <p>50 mg</p>
+                <p>Kwas hialuronowy jest kluczowym składnikiem płynu stawowego, który działa jak smar i amortyzator dla stawów. Suplementacja kwasem hialuronowym może pomóc w utrzymaniu prawidłowej objętości i konsystencji płynu stawowego.</p>
+              </li>
+              <li class="contain-item contain-effect">
+                <svg class="contain-icon effect" width="40" height="40">
+                  <use href="./images/sprite.svg#icon-MSM"></use>
+                </svg>
+                <span class="contain-effect-left" aria-hidden="true"></span>
+                <span class="contain-effect-right" aria-hidden="true"></span>
+                <h2>MSM</h2>
+                <p>250 mg</p>
+                <p>Metylosulfonylometan, czyli MSM, to naturalny związek siarki, który pomaga w utrzymaniu zdrowych stawów poprzez zmniejszenie stanu zapalnego i bólu.
+                  MSM może również pomagać w produkcji kolagenu,
+                  co przyczynia się do zdrowia chrząstki stawowej.</p>
+              </li>
+              <li class="contain-item last-content-item">
+                <svg class="contain-icon" width="40" height="40">
+                  <use href="./images/sprite.svg#icon-syrop"></use>
+                </svg>
+                <h2>Syrop glukozowo
+                  - fruktozowy</h2>
+                <p>250 mg</p>
+              </li>
+            </ul>
+            <div class="contain-images">
+              <figure class="contain-image-bottle">
+                <img 
+                  src="./images/content/product.png" 
+                  srcset="./images/content/product.png 1x, ./images/content/product@2x.png 2x" 
+                  alt="image of a bottle" 
+                  loading="lazy" 
+                />
+              </figure>
+              <figure class="contain-image-dog">
+                <img 
+                  src="./images/content/dog.png" 
+                  srcset="./images/content/dog.png 1x, ./images/content/dog@2x.png 2x" 
+                  alt="image of dog" 
+                  loading="lazy" 
+                />
+              </figure>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
-    <footer class="footer">footer</footer>
-    <script src="./js/index.js"></script>
+    <footer class="footer">
+      <div class="container-big">
+        <div class="container footer-container">
+          <div class="items-per-page">
+            <label class="label" for="items-select">liczba produktów na stronie</label>
+            <select class="select" id="items-select">
+              <option value="10">10</option>
+              <option value="20" selected>20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+            </select>
+          </div>
+          <ul class="footer-list">
+         <li class="footer-item"></li>
+         <li class="footer-item"></li>
+          </ul>
+          <div id="items-container" class="footer-modal">
+            <button></button>
+            <div id="produkty">
+              <button type="button">X</button>
+              <span>ID</span>
+              <span>Nazwa:</span>
+              <span>Wartość:</span>
+            </div>
+          </div>
+          <div class="footer-ovarlay"></div>
+      </div>
+      </div>
+    </footer>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>

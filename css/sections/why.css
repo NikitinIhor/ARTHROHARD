@@ -1,81 +1,47 @@
-.what {
-}
-.container-big {
-}
-.container {
-}
-.what-container {
-}
-.what-title {
-  padding-top: 70px;
-  font-weight: 450;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 90px;
-  background: linear-gradient(90.01deg, #111111 -8.85%, #b1b1b1 116.12%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+.effect,
+.contain-list {
   position: relative;
 }
-.what-title::before {
+.why-effect-left,
+.why-effect-right {
   position: absolute;
-  content: "";
-  bottom: -20px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 140px;
-  height: 1px;
-  background-color: rgba(17, 17, 17, 1);
+  overflow: hidden;
+  top: -180px;
+  width: 70px;
+  height: 137px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.why-effect-left {
+  overflow: hidden;
+  left: -15px;
+  background-image: url("../../images/effect-left.png");
+}
+.why-effect-right {
+  overflow: hidden;
+  right: -15px;
+  background-image: url("../../images/effect-right.png");
+}
+.why-item-options {
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.why-item-options p {
+  width: 220px;
 }
 
-.what-list {
+.why-item-option {
+  justify-content: space-between;
 }
-.what-item {
+@media (min-width: 768px) {
+  .why-item-options {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-.what-item-title {
-  font-weight: 450;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 50px;
-  position: relative;
-}
-.what-item-title::before {
-  position: absolute;
-  content: "";
-  bottom: -20px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 140px;
-  height: 1px;
-  background-color: rgba(17, 17, 17, 1);
-}
-.what-item-text {
-  font-size: 13px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-/* .item-underlined {
-  position: relative;
-}
-.item-underlined::before {
-  position: absolute;
-  content: "";
-  bottom: -20px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 1px;
-  background-color: rgba(17, 17, 17, 1);
-} */
-.what-item-image {
-}
-.what-item-options {
-}
-.what-item-option {
-}
-.what-item-images {
-}
-.half-image {
+@media (min-width: 1920px) {
+  .why {
+    display: none;
+  }
 }
