@@ -18,7 +18,7 @@
 
 .loader-dog {
   position: absolute;
-  bottom: 10%;
+  bottom: 20%;
   opacity: 0;
   animation: imageFadeIn 3s forwards;
 }
