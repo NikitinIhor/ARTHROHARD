@@ -1,0 +1,32 @@
+@import url("./css/reset.css");
+@import url("./css/loader.css");
+@import url("./css/burger.css");
+@import url("./css/header.css");
+@import url("./css/sections/arthrohard.css");
+@import url("./css/sections/what.css");
+@import url("./css/sections/why.css");
+@import url("./css/sections/contain.css");
+@import url("./css/footer.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+    padding: 0 187px;
+  }
+}

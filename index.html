@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,450,700&display:swap"
       rel="stylesheet"
@@ -11,9 +11,32 @@
     <title>ARTHROHARD</title>
   </head>
   <body>
+    <div class="loader">
+        <div class="loader-wrapper">
+          <span>A</span>
+          <span>R</span>
+          <span>T</span>
+          <span>H</span>
+          <span>R</span>
+          <span>O</span>
+          <span class="red">H</span>
+          <span class="red">A</span>
+          <span class="red">R</span>
+          <span class="red">D</span>
+        </div>
+        <figure class="loader-dog">
+          <img 
+            src="./images/content/dog.png" 
+            srcset="./images/content/dog.png 1x, ./images/content/dog@2x.png 2x" 
+            alt="image of dog" 
+            loading="lazy" 
+          />
+        </figure>
+    </div>
+    <div class="big-wrapper">
     <header class="header">
       <div class="container header-container">
-        <div class="header-logo">
+        <div id="home" class="header-logo">
           <img src="./images/mainLogo.png" alt="ARTHROHARD logo" />
         </div>
         <nav>
@@ -311,37 +334,32 @@
             </div>
           </div>
         </section>
-      </div>
     </main>
-    <footer class="footer">
+    <footer class="footer"> 
       <div class="container-big">
         <div class="container footer-container">
-          <div class="items-per-page">
+          <div class="items-per-page" >
             <label class="label" for="items-select">liczba produktów na stronie</label>
+            <div class="select-wrapper">
             <select class="select" id="items-select">
               <option value="10">10</option>
               <option value="20" selected>20</option>
               <option value="30">30</option>
               <option value="40">40</option>
             </select>
+            <button class="select-button" type="button">▼</button>
           </div>
-          <ul class="footer-list">
-         <li class="footer-item"></li>
-         <li class="footer-item"></li>
-          </ul>
-          <div id="items-container" class="footer-modal">
-            <button></button>
-            <div id="produkty">
-              <button type="button">X</button>
-              <span>ID</span>
-              <span>Nazwa:</span>
-              <span>Wartość:</span>
-            </div>
+        </div>
+          <ul id="produkty" class="footer-list"></ul>
+          <div class="footer-modal">
+            <button class="modal-close-btn">x</button>
+            <div class="footer-products"></div>
           </div>
-          <div class="footer-ovarlay"></div>
+          <div class="footer-overlay"></div>
       </div>
       </div>
     </footer>
-    <script src="./js/index.js" type="module"></script>
+  </div>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
