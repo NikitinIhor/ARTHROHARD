@@ -16,11 +16,12 @@
   height: 92px;
   margin-bottom: 30px;
   align-items: center;
+  width: 260px;
 }
 .label {
   padding: 12px;
   border: 1px solid rgba(173, 72, 68, 1);
-  font-size: 18px;
+  font-size: 17px;
   color: rgba(0, 0, 0, 1);
   text-align: center;
 }
@@ -39,7 +40,7 @@
 .select-button {
   position: absolute;
   top: 50%;
-  right: 110px;
+  right: 100px;
   transform: translateY(-50%);
   background: transparent;
   border: none;
@@ -131,6 +132,7 @@
     justify-content: center;
     height: 46px;
     margin-bottom: 120px;
+    width: 100%;
   }
   .label {
     padding: 10px;
