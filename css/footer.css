@@ -14,6 +14,8 @@
   display: flex;
   flex-direction: column;
   height: 92px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   align-items: center;
   width: 260px;
@@ -51,8 +53,9 @@
 }
 .footer-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+  grid-template-columns: 1fr auto;
+  column-gap: 50px;
+  row-gap: 20px;
   padding-bottom: 104px;
 }
 .footer-item {
@@ -175,6 +178,7 @@
 @media (min-width: 1920px) {
   .footer-list {
     grid-template-columns: repeat(4, 1fr);
+    row-gap: 35px;
   }
   .footer-item {
     width: 370px;
