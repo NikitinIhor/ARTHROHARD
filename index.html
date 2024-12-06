@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css" />
     <link rel="stylesheet" href="./styles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,450,700&display:swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="./images/logo.png" />
     <title>ARTHROHARD</title>
   </head>
   <body>
@@ -314,6 +316,14 @@
                 <p>250 mg</p>
               </li>
             </ul>
+            <div class="contain-images-small">
+              <div class="bottle">
+                <img src="./images/contain-small/bottle-small.png" alt="image of a bottle">
+              </div>
+              <div>
+                <img src="./images/contain-small/dog-small.png" alt="image of a dog">
+              </div>
+            </div>
             <div class="contain-images">
               <figure class="contain-image-bottle">
                 <img 
@@ -342,10 +352,11 @@
             <label class="label" for="items-select">liczba produktów na stronie</label>
             <div class="select-wrapper">
             <select class="select" id="items-select">
-              <option value="10">10</option>
               <option value="20" selected>20</option>
-              <option value="30">30</option>
               <option value="40">40</option>
+              <option value="60">60</option>
+              <option value="80">80</option>
+              <option value="100">100</option>
             </select>
             <button class="select-button" type="button">▼</button>
           </div>

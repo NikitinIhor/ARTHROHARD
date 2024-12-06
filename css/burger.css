@@ -19,7 +19,7 @@
 }
 .burger-icon {
   position: absolute;
-  top: 35px;
+  top: 30px;
   right: 30px;
   display: flex;
   flex-direction: column;

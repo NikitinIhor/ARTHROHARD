@@ -15,28 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const footerList = document.querySelector(".footer-list");
 
   let itemsPerPage = parseInt(selectedItems.value);
+  let currentPage = 1;
 
-  getData(1, itemsPerPage)
-    .then((res) => {
-      if (res.data) {
-        res.data.map((item) => {
-          addItemToFooterList(item.id, item.text);
-        });
-      }
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-
-  selectedItems.addEventListener("change", (event) => {
-    itemsPerPage = parseInt(event.target.value);
-
-    footerList.innerHTML = "";
-
-    getData(1, itemsPerPage)
+  const loadProducts = (page, itemsPerPage) => {
+    getData(page, itemsPerPage)
       .then((res) => {
-        if (res && res.data) {
-          res.data.map((item) => {
+        if (res) {
+          res.data.forEach((item) => {
             addItemToFooterList(item.id, item.text);
           });
         }
@@ -44,5 +29,25 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch((error) => {
         console.log("Error:", error);
       });
+  };
+
+  loadProducts(currentPage, itemsPerPage);
+
+  selectedItems.addEventListener("change", (event) => {
+    itemsPerPage = parseInt(event.target.value);
+    footerList.innerHTML = "";
+    currentPage = 1;
+    loadProducts(currentPage, itemsPerPage);
   });
+
+  const handleScroll = () => {
+    const pageBottom =
+      window.innerHeight + window.scrollY >= document.body.offsetHeight - 100;
+    if (pageBottom) {
+      currentPage++;
+      loadProducts(currentPage, itemsPerPage);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
 });

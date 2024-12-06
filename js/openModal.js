@@ -51,8 +51,22 @@ export const openModal = () => {
     modal.classList.remove("modalIsOpen");
   };
 
+  const handleOverlayClick = (e) => {
+    if (e.target === overlay) {
+      handleCloseModal();
+    }
+  };
+
+  const handleEscapeClick = (e) => {
+    if (e.key === "Escape") {
+      handleCloseModal();
+    }
+  };
+
   if (footerList) {
     footerList.addEventListener("click", handleOpenmodal);
   }
   closeModal.addEventListener("click", handleCloseModal);
+  overlay.addEventListener("click", handleOverlayClick);
+  document.addEventListener("keydown", handleEscapeClick);
 };

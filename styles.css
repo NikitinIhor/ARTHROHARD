@@ -11,6 +11,10 @@
 html {
   scroll-behavior: smooth;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 
 .container {
   max-width: 320px;
