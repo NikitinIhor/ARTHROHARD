@@ -7,10 +7,12 @@ export const menuOpening = () => {
 
   const handleOpenBurger = () => {
     overlay.classList.add("isOpen");
+    openBurger.style.display = "none";
   };
   const handleCloseBurger = () => {
     overlay.classList.remove("isOpen");
     menu.checked = false;
+    openBurger.style.display = "flex";
   };
 
   menuList.forEach((el) => el.addEventListener("click", handleCloseBurger));
