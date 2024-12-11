@@ -3,7 +3,7 @@ export const menuOpening = () => {
   const overlay = document.querySelector(".overlay ");
   const menu = document.querySelector(".menu-toggle ");
   const menuList = document.querySelectorAll(".nav-menu li a");
-  const menuContainer = document.querySelector(".burger-container");
+  // const menuContainer = document.querySelector(".burger-container");
 
   const handleToggleBurger = () => {
     overlay.classList.toggle("isOpen");
@@ -15,7 +15,7 @@ export const menuOpening = () => {
     openBurger.classList.remove("fixed-position");
   };
   const handleClickOutsideMenu = (e) => {
-    if (!menuContainer.contains(e.target) && !openBurger.contains(e.target)) {
+    if (overlay.contains(e.target)) {
       handleCloseBurger();
     }
   };
