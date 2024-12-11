@@ -12,6 +12,8 @@ export const openModal = () => {
       overlay.classList.add("showModalOverlay");
       modal.classList.add("modalIsOpen");
 
+      window.location.href = "#modal";
+
       const footerProducts = modal.querySelector(".footer-products");
       if (footerProducts) {
         footerProducts.innerHTML = "";

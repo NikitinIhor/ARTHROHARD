@@ -6,41 +6,40 @@
 .why-effect-right {
   position: absolute;
   overflow: hidden;
-  top: -180px;
-  width: 70px;
-  height: 137px;
+  top: -11.25rem;
+  width: 4.375rem;
+  height: 8.5625rem;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .why-effect-left {
   overflow: hidden;
-  left: -15px;
+  left: -0.9375rem;
   background-image: url("../../images/effect-left.png");
 }
 .why-effect-right {
   overflow: hidden;
-  right: -15px;
+  right: -0.9375rem;
   background-image: url("../../images/effect-right.png");
 }
 .why-item-options {
   align-items: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 .why-item-options p {
-  width: 220px;
+  width: 13.75rem;
 }
-
 .why-item-option {
   justify-content: space-between;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .why-item-options {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
   }
 }
-@media (min-width: 1920px) {
+@media (min-width: 120rem) {
   .why {
     display: none;
   }

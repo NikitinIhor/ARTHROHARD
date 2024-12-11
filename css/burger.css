@@ -12,89 +12,88 @@
   height: 100%;
   background-color: white;
   opacity: 0.8;
-  z-index: 99;
+  z-index: 100;
 }
 .isOpen {
   display: block;
 }
 .burger-icon {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 1.25rem;
+  right: 1.875rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 18px;
-  height: 12px;
+  width: 1.125rem;
+  height: 0.75rem;
   cursor: pointer;
-  z-index: 99;
+  z-index: 102;
+}
+.fixed-position {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 102;
 }
 .burger-icon .line {
-  height: 2px;
+  height: 0.125rem;
   background-color: rgba(173, 72, 68, 1);
-  border-radius: 2px;
+  border-radius: 0.125rem;
   transition: transform 0.3s ease, opacity 0.3s ease;
-}
-.close {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 30px;
-}
-.close button {
-  font-size: 30px;
-  color: rgba(173, 72, 68, 1);
+  z-index: 102;
 }
 .nav-menu {
   position: fixed;
   z-index: 101;
-  top: -80px;
+  top: 3.125rem;
   right: -100%;
   width: 100%;
-  padding-top: 100px;
+  height: 100%;
+  overflow: visible;
   transition: right 0.3s ease;
 }
 .nav-menu ul {
   list-style: none;
   background: rgba(173, 72, 68, 1);
   text-align: center;
-  padding: 20px 0 45px 0;
+  padding: 1.25rem 0 2.8125rem 0;
 }
 .nav-menu li {
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 .nav-menu a {
   color: rgba(216, 216, 216, 1);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-transform: uppercase;
-  transition: all 0.4s ease;
+  transition: color 0.4s ease, text-decoration 0.4s ease;
 }
 .nav-menu a:hover,
 .nav-menu a:active {
   color: rgba(255, 255, 255, 1);
   text-decoration: underline;
 }
-
 .menu-toggle:checked + .burger-icon .line:nth-child(1) {
-  transform: translateY(5px) rotate(45deg);
+  transform: translateY(0.3125rem) rotate(45deg);
 }
 .menu-toggle:checked + .burger-icon .line:nth-child(2) {
   opacity: 0;
 }
 .menu-toggle:checked + .burger-icon .line:nth-child(3) {
-  transform: translateY(-5px) rotate(-45deg);
+  transform: translateY(-0.3125rem) rotate(-45deg);
 }
 .menu-toggle:checked ~ .nav-menu {
   right: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .burger-icon {
     display: none;
   }
-
   .nav-menu {
+    display: none;
+  }
+  .overlay {
     display: none;
   }
 }

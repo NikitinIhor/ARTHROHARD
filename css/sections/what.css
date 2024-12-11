@@ -4,30 +4,30 @@
 .what-effect-left,
 .what-effect-right {
   position: absolute;
-  width: 63px;
-  height: 162px;
+  width: 3.94rem;
+  height: 10.13rem;
   background-repeat: no-repeat;
   background-size: contain;
   overflow: hidden;
 }
 .what-effect-left {
   overflow: hidden;
-  top: -90px;
+  top: -5.63rem;
   left: 0;
   background-image: url("../../images/effect-left.png");
 }
 .what-effect-right {
   overflow: hidden;
-  top: -10px;
+  top: -0.63rem;
   right: 0;
   background-image: url("../../images/effect-right.png");
 }
 .what-title {
-  padding-top: 70px;
+  padding-top: 4.38rem;
   font-weight: 450;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 5.63rem;
   background: linear-gradient(90.01deg, #111111 -8.85%, #b1b1b1 116.12%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -38,48 +38,48 @@
 .what-title::before {
   position: absolute;
   content: "";
-  bottom: -20px;
+  bottom: -1.25rem;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 140px;
-  height: 1px;
+  width: 8.75rem;
+  height: 0.06rem;
   background-color: rgba(17, 17, 17, 1);
 }
 .what-list {
-  padding-bottom: 70px;
+  padding-bottom: 4.38rem;
   display: flex;
   flex-direction: column;
-  row-gap: 70px;
+  row-gap: 4.38rem;
 }
 .what-item-title {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 3.13rem;
   position: relative;
   line-height: 1.5;
 }
 .what-item-title::before {
   position: absolute;
   content: "";
-  bottom: -20px;
+  bottom: -1.25rem;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 140px;
-  height: 1px;
+  width: 8.75rem;
+  height: 0.06rem;
   background-color: rgba(17, 17, 17, 1);
 }
 .what-item-subtext {
   font-weight: 600;
-  font-size: 13px;
+  font-size: 0.81rem;
   text-align: center;
 }
 .what-item-text {
-  font-size: 13px;
+  font-size: 0.81rem;
   text-align: center;
 }
 .what-item-content {
-  margin-bottom: 30px;
+  margin-bottom: 1.88rem;
 }
 .image-underlined {
   position: relative;
@@ -87,70 +87,69 @@
 .image-underlined::before {
   position: absolute;
   content: "";
-  bottom: -20px;
+  bottom: -1.25rem;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: 1px;
+  height: 0.06rem;
   background-color: rgba(17, 17, 17, 1);
 }
 .what-item-image {
-  width: 270px;
-  height: 290px;
+  width: 16.88rem;
+  height: 18.13rem;
   margin: 0 auto;
 }
 .what-item-image {
-  width: 270px;
-  height: 290px;
+  width: 16.88rem;
+  height: 18.13rem;
 }
 .what-item-options {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 30px;
-  margin-bottom: 30px;
+  row-gap: 1.88rem;
+  margin-bottom: 1.88rem;
 }
 .circle {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0.06rem 0.56rem 0px rgba(0, 0, 0, 0.25);
 }
 .circle span {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: rgba(0, 0, 0, 1);
 }
 .what-item-option {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   align-items: center;
 }
 .what-item-option p {
   color: rgba(0, 0, 0, 1);
-  font-size: 13px;
+  font-size: 0.81rem;
 }
 .what-item-images {
-  gap: 20px;
+  gap: 1.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .half-image {
-  height: 290px;
-  width: 135px;
+  height: 18.13rem;
+  width: 8.44rem;
   margin: 0 auto;
 }
 .what-item:first-child .decoration-effect-left,
 .what-item:first-child .decoration-effect-right {
   display: none;
 }
-
 .what-item-content {
   position: relative;
 }
@@ -158,91 +157,90 @@
 .decoration-effect-right {
   position: absolute;
   overflow: hidden;
-  top: -40px;
-  width: 53px;
-  height: 137px;
+  top: -2.5rem;
+  width: 3.31rem;
+  height: 8.56rem;
   background-repeat: no-repeat;
   background-size: contain;
 }
 .decoration-effect-left {
   overflow: hidden;
-  left: -15px;
+  left: -0.94rem;
   background-image: url("../../images/effect-left.png");
 }
 .decoration-effect-right {
   overflow: hidden;
-  right: -15px;
+  right: -0.94rem;
   background-image: url("../../images/effect-right.png");
 }
-
 @media (min-width: 1920px) {
   .what-title {
-    padding-top: 153px;
+    padding-top: 9.56rem;
     font-weight: 500;
-    font-size: 48px;
-    margin-bottom: 155px;
+    font-size: 3rem;
+    margin-bottom: 9.69rem;
   }
   .what-list {
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 116px;
-    gap: 206px;
+    padding-bottom: 7.25rem;
+    gap: 12.88rem;
   }
   .what-item-options {
     align-items: start;
   }
   .circle {
-    width: 46px;
-    height: 46px;
+    width: 2.88rem;
+    height: 2.88rem;
   }
   .what-item-content {
-    width: 417px;
-    height: 286px;
+    width: 26.06rem;
+    height: 17.88rem;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 3.13rem;
   }
   .what-item-option p {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .what-item-title {
-    font-size: 31px;
-    width: 400px;
+    font-size: 1.94rem;
+    width: 25rem;
   }
   .what-item-subtext {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .what-item-text {
-    font-size: 20px;
-    width: 440px;
+    font-size: 1.25rem;
+    width: 27.5rem;
   }
   .what-item-image {
-    width: 360px;
-    height: 290px;
+    width: 22.5rem;
+    height: 18.13rem;
   }
   .what-item-image img {
-    width: 360px;
-    height: 290px;
+    width: 22.5rem;
+    height: 18.13rem;
   }
   .half-image {
-    width: 170px;
-    height: 290px;
+    width: 10.63rem;
+    height: 18.13rem;
   }
   .half-image img {
-    width: 170px;
-    height: 290px;
+    width: 10.63rem;
+    height: 18.13rem;
   }
   .what-effect-left,
   .what-effect-right {
-    width: 318px;
-    height: 812px;
+    width: 19.88rem;
+    height: 50.75rem;
   }
   .what-effect-left {
-    top: -90px;
-    left: 400px;
+    top: -5.63rem;
+    left: 25rem;
   }
   .what-effect-right {
-    top: -200px;
-    right: 400px;
+    top: -12.5rem;
+    right: 25rem;
   }
   .what-item:first-child .decoration-effect-left,
   .what-item:first-child .decoration-effect-right {
@@ -251,14 +249,14 @@
   .decoration-effect-left,
   .decoration-effect-right {
     position: absolute;
-    top: 450px;
-    height: 195px;
+    top: 28.13rem;
+    height: 12.19rem;
   }
   .decoration-effect-left {
-    left: -40px;
+    left: -2.5rem;
   }
   .decoration-effect-right {
-    right: 40px;
+    right: 2.5rem;
     transform: rotate(45deg);
   }
 }

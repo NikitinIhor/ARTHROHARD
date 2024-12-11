@@ -1,7 +1,7 @@
 .arthrohard-container {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 1.875rem;
 }
 .container-big {
   width: 100%;
@@ -12,9 +12,9 @@
 }
 .arthrohard-sub-title {
   font-weight: 450;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   background: linear-gradient(90.01deg, #111111 -8.85%, #b1b1b1 116.12%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -23,77 +23,78 @@
 }
 .arthrohard-text {
   text-align: center;
-  margin-bottom: 85px;
+  margin-bottom: 5.3125rem;
 }
 .arthrohard-btn {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .arthrohard-container {
     flex-direction: row;
-    gap: 50px;
+    gap: 3.125rem;
   }
   .arthrohard-title {
     display: block;
     color: black;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
   }
   .arthrohard-title span {
     color: red;
   }
   .arthrohard-sub-title {
     text-align: start;
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   .arthrohard-content {
-    margin-top: 50px;
+    margin-top: 3.125rem;
   }
   .arthrohard-image {
-    margin-bottom: 33px;
+    margin-bottom: 2.0625rem;
   }
   .arthrohard-text {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     text-align: start;
   }
   .arthrohard-btn {
     display: block;
-    padding: 10px 30px;
+    padding: 0.625rem 1.875rem;
     background-color: rgba(48, 171, 76, 1);
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: white;
-    transition: all 0.4s ease;
+    transition: background-color 0.4s ease;
   }
   .arthrohard-btn:hover {
     background-color: rgb(8, 71, 23);
   }
 }
-@media (min-width: 1920px) {
+
+@media (min-width: 120rem) {
   .container-big {
     background: rgba(246, 246, 246, 1);
   }
   .arthrohard-content {
-    margin-top: 170px;
+    margin-top: 10.625rem;
   }
 
   .arthrohard-title {
-    font-size: 120px;
-    margin-bottom: 33px;
+    font-size: 7.5rem;
+    margin-bottom: 2.0625rem;
   }
   .arthrohard-sub-title {
-    font-size: 48px;
-    width: 800px;
+    font-size: 3rem;
+    width: 50rem;
   }
   .arthrohard-text {
-    font-size: 20px;
-    width: 700px;
+    font-size: 1.25rem;
+    width: 43.75rem;
   }
   .arthrohard-btn {
-    padding: 10px 40px;
-    font-size: 20px;
+    padding: 0.625rem 2.5rem;
+    font-size: 1.25rem;
   }
 }
