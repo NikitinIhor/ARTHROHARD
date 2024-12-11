@@ -48,7 +48,6 @@
   top: 3.125rem;
   right: -100%;
   width: 100%;
-  height: 100%;
   overflow: visible;
   transition: right 0.3s ease;
 }
